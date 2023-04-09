@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-size: 18px;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'El Messiri', sans-serif;
+    background-color: rgb(199, 229, 145);
+    background-image: url(../img/logo.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#game {
+    border-radius: 16px;
+    text-align: center;
+    background-color: #FFFD;
+}
+
+@media screen and (max-width: 576px) {
+    body {
+        padding: 0.25rem;
+    }
+
+    #game {
+        width: 100%;
+        padding: 1rem;
+    }
+}
+
+@media screen and (min-width: 577px) {
+    #game {
+        width: 50%;
+        padding: 3rem;
+    }
+}
+
+
+#game p {
+    padding-bottom: 2rem;
+}
+
+button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+    font-family: inherit;
+    font-size: inherit;
+    background: none;
+    cursor: pointer;
+    transition: background-color 0.4s;
+}
+
+.start-btn {
+    background-color: #3288f1;
+    color: #FFF;
+}
+
+.start-btn:hover {
+    background-color: #2b70c5;
+}
+
+.option-btn {
+    width: 100%;
+    margin: 0.5rem 0;
+    background-color: #3288f1;
+    color: #FFF;
+}
+
+.option-btn:hover {
+    background-color: #2b70c5;
+}
